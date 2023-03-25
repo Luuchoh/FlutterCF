@@ -10,12 +10,12 @@ import 'package:hello_world/Widgets/MultiChild/MyWrap.dart';
 
 class NowPlayingPage extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() => _NowPlayingPageState();
+  State<StatefulWidget> createState() => NowPlayingPageState();
 
 
 }
 
-class _NowPlayingPageState extends State<NowPlayingPage> {
+class NowPlayingPageState extends State<NowPlayingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -6,12 +6,10 @@ import 'package:hello_world/Pages/MyHomePage.dart';
 
 class LoginPage extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() => _LoginPageState();
-
-
+  State<StatefulWidget> createState() => LoginPageState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
