@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 class MyTextRich extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return RichText(text:
-      TextSpan(
+    return RichText(
+      text: TextSpan(
         text: '¿Tienes una cuenta?',
         style: TextStyle(
           color: Colors.black,
