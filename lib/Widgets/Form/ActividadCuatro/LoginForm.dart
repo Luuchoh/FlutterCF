@@ -59,10 +59,11 @@ class LoginFormState extends State<LoginForm> {
                 Padding(
                   padding: EdgeInsets.symmetric(vertical: 20),
                   child: TextFormField(
-                    controller: emailCtrl,
+                    controller: passwordCtrl,
                     decoration: decoration("Contraseña", Icons.lock_outline),
                     validator: (value) => validateEmail(value),
                     keyboardType: TextInputType.emailAddress,
+                    obscureText: true,
                   ),
                 ),
                 Padding(
