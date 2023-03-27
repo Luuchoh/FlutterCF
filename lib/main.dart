@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
           return MaterialApp(
             title: 'Flutter Demo',
             debugShowCheckedModeBanner: false,
-            initialRoute: ROUTE_LOGIN,
+            initialRoute: ROUTE_HOME,
             onGenerateRoute: MyRoutes.generateRoute,
             theme: ThemeData(
               // This is the theme of your application.
