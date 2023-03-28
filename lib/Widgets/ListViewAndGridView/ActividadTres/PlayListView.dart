@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hello_world/Common/MyKeys.dart';
 import 'package:hello_world/Model/Sound.dart';
+import 'package:hello_world/Values/DimensionApp.dart';
 import 'package:hello_world/Widgets/ListViewAndGridView/ActividadTres/SoundListTile.dart';
 import 'package:hello_world/Widgets/ListViewAndGridView/Items/MyCard.dart';
 import 'package:hello_world/Widgets/ListViewAndGridView/Items/MyListTile.dart';
@@ -29,7 +30,7 @@ class PlayListViewState extends State<PlayListView> {
       child: Column(
         children: [
           SizedBox(
-            height: 270,
+            height: coverHeight,
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: sounds.length,

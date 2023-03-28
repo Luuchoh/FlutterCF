@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world/Value/DimensionApp.dart';
+import 'package:hello_world/Values/DimensionApp.dart';
 
 class CoverContainer extends StatelessWidget {
 

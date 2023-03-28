@@ -32,7 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      floatingActionButton: FloatingActionButtonActUno(),
+      // floatingActionButton: FloatingActionButtonActUno(),
       floatingActionButtonLocation: FloatingActionButtonLocation.startFloat,
       appBar: AppBarActUno('UNO'),
       body: SafeArea(

@@ -16,13 +16,25 @@ class SoundListTile extends StatelessWidget {
       subtitle: Text(sound.author),
       trailing: InkWell(
         // onTap: () => playListViewKey.currentState?.remove(sound),
-        child: Icon(
-          Icons.more_vert,
-        ),
+        child: PopupMenuButton (
+          icon: IconTheme(
+            data: Theme.of(context).accentIconTheme,
+            child: Icon(
+              Icons.more_vert,
+            ),
+          ),
+          itemBuilder: (context) => [
+            PopupMenuItem(value: 1, child: Text('Eliminar')),
+            PopupMenuItem(value: 2, child: Text('Otro')),
+          ],
+        )
+
       ),
-      leading: Icon(
-        Icons.play_circle_fill_rounded,
-        color: Colors.pink[100],
+      leading: IconTheme(
+        data: Theme.of(context).primaryIconTheme,
+        child: Icon(
+          Icons.play_circle_fill_rounded,
+        ),
       ),
       // onTap: () => playListViewKey.currentState?.update(sound..title = 'November Rain', index),
       onLongPress: () {print('Long ListTile');},

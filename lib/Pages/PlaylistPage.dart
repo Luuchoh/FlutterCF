@@ -4,12 +4,15 @@ import 'package:hello_world/Common/MyKeys.dart';
 import 'package:hello_world/Common/MyRoutes.dart';
 import 'package:hello_world/Model/Sound.dart';
 import 'package:hello_world/Pages/NowPlayingPage.dart';
+import 'package:hello_world/Values/ColorsApp.dart';
 import 'package:hello_world/Widgets/ListViewAndGridView/ActividadTres/PlayListView.dart';
 import 'package:hello_world/Widgets/ListViewAndGridView/Items/MyCard.dart';
 import 'package:hello_world/Widgets/ListViewAndGridView/Items/MyContainer.dart';
 import 'package:hello_world/Widgets/ListViewAndGridView/Items/MyListTile.dart';
 import 'package:hello_world/Widgets/ListViewAndGridView/MyGridView.dart';
 import 'package:hello_world/Widgets/ListViewAndGridView/MyListView.dart';
+
+import '../generated/l10n.dart';
 
 class PlaylistPage extends StatefulWidget {
   @override
@@ -20,8 +23,14 @@ class PlaylistPageState extends State<PlaylistPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text(S.of(context).money('\$20')),
+      ),
+      // backgroundColor: testOpa,
       floatingActionButton: FloatingActionButton(
-        onPressed: () => playListViewKey.currentState?.add(Sound(title: 'Sweet Child O´Mine', author: 'Guns and Roses' )),
+        onPressed: () {
+          myAppKey.currentState!.changeTheme(ThemeMode.dark);
+        },
         child: Icon(
           Icons.add
         ),
